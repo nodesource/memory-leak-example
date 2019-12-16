@@ -1,0 +1,22 @@
+{
+  "name": "simple-leak-example",
+  "version": "1.0.0",
+  "description": "Testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --inspect index.js",
+    "start-nsolid": "NSOLID_APPNAME='simple-leak-example' NSOLID_COMMAND='localhost:9001' nsolid index.js",
+    "load-mem": "ab -t 10 -n 10000 -c 10 http://localhost:3000/now"
+  },
+  "keywords": [
+    "leak",
+    "server",
+    "inspect"
+  ],
+  "author": "NodeSource",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
